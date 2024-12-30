@@ -1,0 +1,194 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4a4a4a;
+}
+
+.container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.filter-group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #b6b6b6;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center; /* Vertically align labels and inputs */
+}
+
+.filter-group-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: #b6b6b6;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center; /* Vertically align labels and inputs */
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1 1 200px;
+}
+
+.filter-item-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  width: 100%;
+}
+
+.filters label {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.filters input,
+.filters select {
+  flex: 1 1 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.filters .small-input {
+  width: 100px;
+}
+
+.filters button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #0056b3;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .filters {
+    padding: 10px;
+  }
+
+  .filter-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 50px;
+  }
+
+  .filter-group-1,
+  .filter-group-2 {
+    gap: 5px;
+  }
+
+  .filter-group-2 {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .filters label,
+  .filters input,
+  .filters select {
+    flex: 1 1 100%;
+  }
+
+  .filters button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    font-size: 0.7em;
+  }
+
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}
